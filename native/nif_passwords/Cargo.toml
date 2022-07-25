@@ -1,0 +1,15 @@
+[package]
+name = "nif_passwords"
+version = "0.1.0"
+authors = []
+edition = "2018"
+
+[lib]
+name = "nif_passwords"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+rustler = "0.25.0"
+rust-argon2 = "0.8"
+rand = "0.7.3"
